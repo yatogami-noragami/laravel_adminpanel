@@ -1,4 +1,4 @@
-Documentation for Laravel Admin Panel
+<h1>Documentation for Laravel Admin Panel</h1>
 <br>
 <br>
 
