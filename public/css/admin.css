@@ -1,0 +1,108 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+.profileImg {
+    width: 70px;
+    height: 70px;
+}
+
+#logoutBtn {
+    position: absolute;
+    bottom: 5%;
+    left: auto;
+}
+
+#photoPreview {
+    width: 100%;
+    height: auto;
+}
+
+.ck-editor__editable_inline {
+    min-height: 200px;
+}
+
+#itemOwnerCountryCode {
+    width: 100px;
+}
+
+#itemOwnerCountryCodeEdit {
+    width: 100px;
+}
+
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    .page-item {
+        margin: 0 4px;
+    }
+
+    .page-link {
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #ddd;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+
+    .active .page-link {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+    }
+}
+
+#map {
+    height: 400px;
+}
+
+#backToTopBtn {
+    position: fixed;
+    right: -50%;
+    bottom: 10%;
+}
+
+#backToTopBtn i {
+    color: blue;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    animation: bttGlow 1s infinite linear;
+}
+
+@keyframes bttGlow {
+    from {
+        color: blue;
+        text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    }
+
+    to {
+        color: red;
+        text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue;
+    }
+}
+
+@keyframes bttShow {
+    from {
+        right: -50%;
+    }
+
+    to {
+        right: 10%;
+    }
+}
+
+@keyframes bttHide {
+    from {
+        right: 10%;
+    }
+
+    to {
+        right: -50%;
+    }
+}
